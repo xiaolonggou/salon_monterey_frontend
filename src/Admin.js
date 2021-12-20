@@ -85,7 +85,7 @@ class Admin extends React.Component {
           <Container className="text-left">
             <Form noValidate validated={this.validated} onSubmit={this.handleSubmit}>
                   <Form.Group as={Row} controlId="productID">
-                      <Form.Label column sm="2">Product ID:</Form.Label>
+                      <Form.Label column sm="2">Art piece ID:</Form.Label>
                       <Col sm="6">
                           <Form.Control type="text" name="id" placeholder="" required style={{width: "80px"}} value={this.state.id} onChange={this.changeHandler}/>
                           <Form.Text className="text-muted">Enter the product id to upload an image for</Form.Text>
