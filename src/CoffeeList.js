@@ -2,7 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table'
 import axios from 'axios';
 
-class ArtsList extends React.Component {
+class CoffeeList extends React.Component {
 
     readData() {
         const self = this;
@@ -22,8 +22,8 @@ class ArtsList extends React.Component {
 
             table.push(
             <tr key={i}>
-                <td>{this.state.arts[i].creator}</td>
                 <td>{this.state.arts[i].description}</td>
+                <td>{this.state.arts[i].creator}</td>
                 <td>{this.state.arts[i].format}</td>
             </tr>
             );
@@ -48,10 +48,10 @@ class ArtsList extends React.Component {
                 <thead>
                     <tr>
                         <th>
-                            Author
+                            Description
                         </th>
                         <th>
-                            Description
+                            Author
                         </th>
                         <th>
                             Format
@@ -67,4 +67,4 @@ class ArtsList extends React.Component {
     }
 }
 
-export default ArtsList;
+export default CoffeeList;
